@@ -1,0 +1,14 @@
+ALGORITHM Tri_Selection
+VAR
+    temp : INTEGER
+    arr : ARRAY_OF INTEGER[100];
+BEGIN
+    FOR i FROM 1 TO arr.length-1  DO
+        temp := arr[i]
+        IF (temp < arr[i-1]) THEN
+            arr[i] := arr [i-1]
+            arr[i-1] := temp
+        END_IF
+    END_FOR
+
+END
